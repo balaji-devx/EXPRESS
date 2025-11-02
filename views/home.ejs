@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  
+  <main class="container">
+    <div class="hero">
+      <h1>Welcome to Express CRUD Application</h1>
+      <p class="subtitle">A simple Node.js web app demonstrating routing, API, CRUD operations, and middleware</p>
+    </div>
+
+    <div class="features">
+      <div class="feature-card">
+        <h2>🚀 Express Framework</h2>
+        <p>Built with Express.js for fast and minimalist web application development</p>
+      </div>
+
+      <div class="feature-card">
+        <h2>📋 CRUD Operations</h2>
+        <p>Full Create, Read, Update, and Delete functionality for managing products</p>
+        <a href="/products" class="btn">View Products</a>
+      </div>
+
+      <div class="feature-card">
+        <h2>🎨 EJS Views</h2>
+        <p>Dynamic templating with Embedded JavaScript for server-side rendering</p>
+      </div>
+
+      <div class="feature-card">
+        <h2>🔌 RESTful API</h2>
+        <p>Complete REST API endpoints for product management</p>
+        <a href="/api/products" class="btn" target="_blank">Test API</a>
+      </div>
+
+      <div class="feature-card">
+        <h2>⚙️ Custom Middleware</h2>
+        <p>Logging, request timing, and error handling middleware implementations</p>
+      </div>
+
+      <div class="feature-card">
+        <h2>💾 Mockup Data</h2>
+        <p>In-memory data storage without database - perfect for learning and testing</p>
+      </div>
+    </div>
+
+    <div class="quick-start">
+      <h2>Quick Start</h2>
+      <ul>
+        <li><a href="/products">Browse Products</a> - View all products in the catalog</li>
+        <li><a href="/products/new">Add New Product</a> - Create a new product entry</li>
+        <li><a href="/api/products">API Endpoint</a> - Access the REST API directly</li>
+      </ul>
+    </div>
+  </main>
+  
+  <%- include('partials/footer') %>
+</body>
+</html>
